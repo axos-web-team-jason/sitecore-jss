@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@400;600&display=swap');
+
+a[target='_blank']:after {
+  content: '\1F5D7';
+}
+
+/*
+  Hides Sitecore Experience Editor markup,
+  if you run the app in connected mode while the Sitecore cookies
+  are set to edit mode.
+*/
+.scChromeData,
+.scpm {
+  display: none !important;
+}
+
+/*
+  Styles for default JSS error components
+*/
+.sc-jss-editing-error,
+.sc-jss-placeholder-error {
+  padding: 1em;
+  background-color: lightyellow;
+}
+
+/* 
+  Style for default content block
+*/
+.contentTitle {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover,
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --ufb-bg: #e18357; /* Button Background */
+  --ufb-primary: #f4f4f4;
+  --ufb-light: #ffffff;
+  --ufb-dark: #323339; /* Text */
+  --ufb-secondary: #aa9377; /* Links */
+
+  /*-----------------------*/
+  --ufb-text: #323339;
+  --ufb-btn-bg: #e18357;
+  --ufb-white: #ffffff;
+}
+
+/* GLOBAL PAGE CONTAINER */
+.utils-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: calc(100% - 3.125rem);
+}
+
+/* DEFAULT H1 */
+h1 {
+  font-family: 'Lora', sans-serif;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+/* SECTION HEADERS */
+.centeredHeader {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+}
+
+/* SECTION PADDING */
+.section {
+  padding: 76px 0;
+}
+
+.primaryBg {
+  background-color: var(--ufb-primary);
+}
+
+/* GRAY BACKGROUND */
+.grayBg {
+  background-color: #60707a;
+}
+
+/* DARK TEXT COLOR */
+.darkText {
+  color: var(--ufb-dark);
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .centeredHeader {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    padding: 0 20px;
+  }
+  .centeredHeader {
+    margin-bottom: 2rem;
+  }
+}
+
+/* ARTICLES & TOOLS SLIDER */
+.slick-slider .slick-list,
+.slick-slider .slick-track,
+.slick-initialized .slick-slide {
+  display: flex;
+}
+
+.slick-initialized .slick-slide {
+  margin-right: 1.5rem;
+}
+
+.slick-initialized .slick-slide:last-child {
+  margin-right: 0;
+}
+
+.slick-dots li,
+.slick-dots li button {
+  width: 1rem;
+  height: 1rem;
+}
+
+.slick-dots li {
+  margin: 0 8px;
+}
+
+.slick-dots li button {
+  border: 1px solid #323339;
+  border-radius: 50%;
+}
+
+.slick-dots li button:before {
+  display: none;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #323339;
+}
+
+.slick-dots {
+  bottom: calc(-1.5rem - 29px);
+}
+
+@media (max-width: 960px) {
+  .slick-list {
+    padding: 0 !important;
+  }
+
+  .slick-initialized .slick-slide {
+    margin-right: 1.5rem;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .slick-initialized .slick-slide {
+    margin-right: 1rem;
+  }
+
+  .slick-initialized .slick-slide:last-child {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .slick-initialized .slick-slide {
+    width: calc((100% / 3) - (1.5rem * 2 / 3)) !important;
+  }
+}
+
+/* VISIBILITY FOR SPEEDBUMP  */
+#speedbump.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.twoUpHeader {
+  color: var(--ufb-light);
+}
+
+.mainContentHeader {
+  color: var(--ufb-dark);
+}
+
+.sectionBody {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 18px;
+  width: 681px;
+  margin: 0 auto 1rem;
+}
+@media (max-width: 768px) {
+  .sectionBody {
+    width: auto;
+    padding: 0 20px;
+  }
+}
